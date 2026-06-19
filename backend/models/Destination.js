@@ -8,7 +8,7 @@ const itinerarySchema = new mongoose.Schema({
 
 const destinationSchema = new mongoose.Schema({
   name: { type: String, required: true },
-  title: { type: String, required: true },
+  title: { type: String, default: '' },
   description: { type: String, default: '' },
   duration: { type: String, default: '' },
   maxPeople: { type: String, default: '' },
